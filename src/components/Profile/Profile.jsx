@@ -1,3 +1,6 @@
+import PropTypes from 'prop-types';
+import profileStyles from './Profile.module.css';
+
 const Profile = ({
   username,
   tag,
@@ -8,7 +11,7 @@ const Profile = ({
   statsLikes,
 }) => {
   return (
-    <div class="profile">
+    <div className={profileStyles.profile}>
       <div class="description">
         <img src={avatar} alt="User avatar" class="avatar" />
         <p class="name">{username}</p>
