@@ -12,8 +12,8 @@ const Profile = ({
 }) => {
   return (
     <div className={profileStyles.profile}>
-      <div class="description">
-        <img src={avatar} alt="User avatar" class="avatar" />
+      <div className={profileStyles.description}>
+        <img src={avatar} alt="User avatar" className="avatar" />
         <p class="name">{username}</p>
         <p class="tag">{tag}</p>
         <p class="location">{location}</p>
