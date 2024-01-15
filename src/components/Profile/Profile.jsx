@@ -13,24 +13,24 @@ const Profile = ({
   return (
     <div className={profileStyles.profile}>
       <div className={profileStyles.description}>
-        <img src={avatar} alt="User avatar" className="avatar" />
-        <p class="name">{username}</p>
-        <p class="tag">{tag}</p>
-        <p class="location">{location}</p>
+        <img src={avatar} alt="User avatar" className={profileStyles.avatar} />
+        <p className={profileStyles.name}>{username}</p>
+        <p className={profileStyles.tag}>@{tag}</p>
+        <p className={profileStyles.location}>{location}</p>
       </div>
 
-      <ul class="stats">
-        <li>
-          <span class="label">Followers</span>
-          <span class="quantity">{statsFollowers}</span>
+      <ul className={profileStyles.stats}>
+        <li className={profileStyles.item}>
+          <span className={profileStyles.label}>Followers</span>
+          <span className={profileStyles.quantity}>{statsFollowers}</span>
         </li>
-        <li>
-          <span class="label">Views</span>
-          <span class="quantity">{statsViews}</span>
+        <li className={profileStyles.item}>
+          <span className={profileStyles.label}>Views</span>
+          <span className={profileStyles.quantity}>{statsViews}</span>
         </li>
-        <li>
-          <span class="label">Likes</span>
-          <span class="quantity">{statsLikes}</span>
+        <li className={profileStyles.item}>
+          <span className={profileStyles.label}>Likes</span>
+          <span className={profileStyles.quantity}>{statsLikes}</span>
         </li>
       </ul>
     </div>

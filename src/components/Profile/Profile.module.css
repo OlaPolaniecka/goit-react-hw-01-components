@@ -9,3 +9,49 @@
 .description {
   text-align: center;
 }
+
+.avatar {
+  width: 150px;
+  border-radius: 50%;
+  margin-top: 30px;
+  background-color: rgb(204, 220, 233);
+  padding-top: 10px;
+}
+
+.name {
+  color: black;
+  font-size: 25px;
+  font-weight: 500;
+}
+
+.tag {
+  color: rgb(146, 153, 153);
+}
+
+.location {
+  color: rgb(146, 153, 153);
+}
+
+.stats {
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.label {
+  color: gray;
+  font-size: 12px;
+}
+
+.quantity {
+  color: black;
+  font-weight: 500;
+  font-size: 20px;
+  margin-top: 6px;
+}
