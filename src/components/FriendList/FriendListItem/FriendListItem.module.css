@@ -1,7 +1,14 @@
+.list {
+  padding: 15px;
+  margin: 150px auto;
+  width: 300px;
+  background-color: white;
+  border-radius: 4px;
+}
+
 .item {
   padding: 5px 25px;
   display: flex;
-  align-items: center;
   border: 1px solid rgb(184, 196, 206);
   border-radius: 4px;
   margin: 5px;
@@ -15,12 +22,12 @@
   border-radius: 50%;
 }
 
-.is_active {
-  background-color: rgb(0, 155, 0);
+.status__true {
+  background-color: #1b9c26;
 }
 
-.is_not_active {
-  background-color: rgb(228, 23, 23);
+.status__false {
+  background-color: #a82929;
 }
 
 .avatar {

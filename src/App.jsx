@@ -4,7 +4,6 @@ import Statistics from './components/Statistics/Statistics.jsx';
 import data from './data/data.json';
 import friends from './data/friends.json';
 import FriendList from './components/FriendList/FriendList.jsx';
-import FriendListItem from './components/FriendListItem/FriendListItem.jsx';
 import transactions from './data/transactions.json';
 import TransactionHistory from './components/Transactions/TransactionHistory.jsx';
 
@@ -26,9 +25,7 @@ export default function App() {
         <Statistics title="Upload stats" stats={data} />
       </section>
       <section>
-        <FriendList>
-          <FriendListItem friends={friends} />
-        </FriendList>
+        <FriendList friends={friends} />
       </section>
 
       <section>
