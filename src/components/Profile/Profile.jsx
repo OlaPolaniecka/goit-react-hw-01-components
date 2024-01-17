@@ -6,9 +6,7 @@ const Profile = ({
   tag,
   location,
   avatar,
-  statsFollowers,
-  statsViews,
-  statsLikes,
+  stats: { followers, views, likes },
 }) => {
   return (
     <div className={profileStyles.profile}>
@@ -22,15 +20,15 @@ const Profile = ({
       <ul className={profileStyles.stats}>
         <li className={profileStyles.item}>
           <span className={profileStyles.label}>Followers</span>
-          <span className={profileStyles.quantity}>{statsFollowers}</span>
+          <span className={profileStyles.quantity}>{followers}</span>
         </li>
         <li className={profileStyles.item}>
           <span className={profileStyles.label}>Views</span>
-          <span className={profileStyles.quantity}>{statsViews}</span>
+          <span className={profileStyles.quantity}>{views}</span>
         </li>
         <li className={profileStyles.item}>
           <span className={profileStyles.label}>Likes</span>
-          <span className={profileStyles.quantity}>{statsLikes}</span>
+          <span className={profileStyles.quantity}>{likes}</span>
         </li>
       </ul>
     </div>
